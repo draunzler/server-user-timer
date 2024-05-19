@@ -8,7 +8,7 @@ function App() {
   useEffect(() => {
     const fetchServerTime = async () => {
       try {
-        const response = await fetch('http://127.0.0.1:8000/api');
+        const response = await fetch('https://server-user-timer.onrender.com/api');
         const data = await response.json();
         setServerTime(data.serverTime);
       } catch (error) {
